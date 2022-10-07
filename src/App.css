@@ -9,6 +9,7 @@
 .image{
   max-width: 95%;
   max-height: 95%;
+  object-fit: scale-down;
 }
 
 .picture_container{
@@ -26,6 +27,10 @@
 }
 
 .form-wrapper{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-item{
 }
 
 .select-css { 

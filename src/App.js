@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import Picture from './Picture';
@@ -16,23 +15,6 @@ function App() {
   let [favorite, setFavorite] = useLocalStorage('favorite', [])
   let [isModalActive, setIsModalActive] = useState(false)
   let [modalContent, setModalContent] = useState('')
-
-
-  // useEffect(()=>{
-  //   localStorage.setItem('favorite', JSON.stringify(favorite))
-  //   console.log(JSON.parse(localStorage.getItem('favorite')));
-    
-  // }, [favorite])
-
-  // useEffect(()=>{
-  //   let a = JSON.parse(localStorage.getItem('favorite'))
-  //   console.log(a);
-    
-  //   if (localStorage.getItem('favorite').length){
-  //     setFavorite(localStorage.getItem('favorite'))
-  //   }
-  // },[])
-
 
   let url = ''
   useEffect(() => {
